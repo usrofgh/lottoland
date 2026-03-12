@@ -1,0 +1,15 @@
+services:
+  db:
+    ports:
+      - "5433:5432"
+
+  redis:
+    ports:
+      - "6380:6379"
+
+
+  app:
+    env_file:
+      - ../envs/.env.local
+    ports:
+      - "8001:8000"

@@ -1,0 +1,29 @@
+[project]
+name = "lottoland"
+version = "0.1.0"
+description = "Just a demonstration"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.18.4",
+    "apscheduler>=3.11.2",
+    "asyncpg>=0.31.0",
+    "dishka>=1.9.1",
+    "fastapi>=0.135.1",
+    "gunicorn>=25.1.0",
+    "pydantic-settings>=2.13.1",
+    "redis>=7.3.0",
+    "structlog>=25.5.0",
+    "uvicorn>=0.41.0",
+    "websockets>=16.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.5",
+]
+
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM"]
+ignore = ["E501"]
