@@ -1,7 +1,7 @@
 from uuid import UUID
 
-from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from domain.entities.bid_entity import BidEntity
 from domain.i_interfaces.i_bid_repo import IBidRepository

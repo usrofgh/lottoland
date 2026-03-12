@@ -1,8 +1,9 @@
 from starlette.requests import Request
 from starlette.responses import JSONResponse
 
-from domain.errors import DomainError, ErrorCodes as Ec
 from bootstrap.logging_config import log_domain_error, log_unexpected_error
+from domain.errors import DomainError
+from domain.errors import ErrorCodes as Ec
 
 """
 Centralized exception handlers to avoid scattering error-handling logic across the codebase

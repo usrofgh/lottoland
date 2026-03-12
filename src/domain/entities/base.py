@@ -1,6 +1,6 @@
-from dataclasses import field, dataclass
-from datetime import datetime, UTC
-from uuid import uuid4, UUID
+from dataclasses import dataclass, field
+from datetime import UTC, datetime
+from uuid import UUID, uuid4
 
 
 @dataclass(slots=True, kw_only=True)

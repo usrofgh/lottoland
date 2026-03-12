@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from datetime import datetime, UTC, timedelta
+from datetime import UTC, datetime, timedelta
 
 from domain.entities.lot_entity import LotEntity, LotStatus
 from domain.i_interfaces.i_lot_repo import ILotRepository

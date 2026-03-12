@@ -3,7 +3,7 @@ from uuid import UUID
 
 from bootstrap.settings import Settings
 from domain.entities.bid_entity import BidEntity
-from domain.errors import ErrorCodes, DomainError
+from domain.errors import DomainError, ErrorCodes
 from domain.i_interfaces.i_bid_repo import IBidRepository
 from domain.i_interfaces.i_event_publisher import IEventPublisher
 from domain.i_interfaces.i_lot_repo import ILotRepository

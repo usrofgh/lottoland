@@ -1,5 +1,5 @@
 import json
-from datetime import datetime, UTC
+from datetime import UTC, datetime
 
 from dishka import AsyncContainer
 from redis.asyncio import Redis

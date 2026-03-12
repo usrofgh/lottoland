@@ -1,8 +1,13 @@
-from typing import AsyncGenerator
+from collections.abc import AsyncGenerator
 
-from dishka import Provider, provide, Scope
+from dishka import Provider, Scope, provide
 from redis.asyncio import Redis
-from sqlalchemy.ext.asyncio import AsyncEngine, create_async_engine, async_sessionmaker, AsyncSession
+from sqlalchemy.ext.asyncio import (
+    AsyncEngine,
+    AsyncSession,
+    async_sessionmaker,
+    create_async_engine,
+)
 
 from application.commands.create_bid_command import CreateBidCommand
 from application.commands.create_lot_command import CreateLotCommand

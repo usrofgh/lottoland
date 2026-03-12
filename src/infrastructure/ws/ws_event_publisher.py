@@ -1,5 +1,6 @@
 import json
 from uuid import UUID
+
 from redis.asyncio import Redis
 
 from domain.i_interfaces.i_event_publisher import IEventPublisher

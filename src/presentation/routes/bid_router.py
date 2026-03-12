@@ -6,7 +6,11 @@ from fastapi import APIRouter, status
 
 from application.commands.create_bid_command import CreateBidCommand
 from application.queries.get_bids_query import GetBidsQuery
-from presentation.schemas.bid_schemas import BidReadSchema, BidCreateSchema, BidCreatedOkSchema
+from presentation.schemas.bid_schemas import (
+    BidCreatedOkSchema,
+    BidCreateSchema,
+    BidReadSchema,
+)
 
 bid_router = APIRouter(
     prefix="/lots/{lot_id}/bids",

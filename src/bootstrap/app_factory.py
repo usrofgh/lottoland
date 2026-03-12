@@ -7,11 +7,17 @@ from dishka.integrations.fastapi import setup_dishka
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-from bootstrap.ioc import DBProvider, RepositoryProvider, CommandProvider, QueryProvider, RedisProvider
-from bootstrap.logging_config import setup_logging, log_run_app
+from bootstrap.ioc import (
+    CommandProvider,
+    DBProvider,
+    QueryProvider,
+    RedisProvider,
+    RepositoryProvider,
+)
+from bootstrap.logging_config import log_run_app, setup_logging
 from domain.errors import DomainError
 from infrastructure.tasks.ended_lots_checker import make_check_ended_lots
-from presentation.error_handler import unexpected_error_handler, domain_error_handler
+from presentation.error_handler import domain_error_handler, unexpected_error_handler
 from presentation.middlewares import RequestLoggingMiddleware
 from presentation.routes.bid_router import bid_router
 from presentation.routes.lot_router import lot_router

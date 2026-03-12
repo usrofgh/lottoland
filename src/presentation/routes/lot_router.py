@@ -4,7 +4,11 @@ from fastapi import APIRouter, status
 
 from application.commands.create_lot_command import CreateLotCommand
 from application.queries.get_lots_query import GetActiveLotsQuery
-from presentation.schemas.lot_schemas import LotCreateSchema, LotCreatedOkSchema, LotReadSchema
+from presentation.schemas.lot_schemas import (
+    LotCreatedOkSchema,
+    LotCreateSchema,
+    LotReadSchema,
+)
 
 lot_router = APIRouter(
     prefix="/lots",
