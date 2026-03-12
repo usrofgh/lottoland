@@ -21,6 +21,8 @@ Run on Windows from the root directory:
 docker compose --env-file envs/.env.dev -f docker/docker-compose-base.yml -f docker/docker-compose-dev.yml up --build
 ```
 
+Visit http://127.0.0.1:8002/docs
+
 ## Stack
 
 ---
